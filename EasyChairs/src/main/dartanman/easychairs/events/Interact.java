@@ -52,6 +52,7 @@ public class Interact implements Listener{
 					loc = new Location(block.getWorld(), block.getX() + 0.5, block.getY() - 1.2, block.getZ() + 0.5, 90, 90);
 				}else {
 					// player did not right-click a normal facing stair (it is upside-down or diagonal)
+					// this was an assumption which turned out to be false.
 					return;
 				}
 				// spawns the stand at the location
